@@ -1,0 +1,176 @@
+#gdpr-cookie-notice {
+    border: 1px solid lightgrey;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #333;
+    padding: 15px 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.gdpr-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.gdpr-cookie-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.gdpr-content p {
+    margin: 0;
+    flex: 1;
+}
+
+.gdpr-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.gdpr-content a:hover {
+    text-decoration: underline;
+}
+
+.gdpr-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gdpr-settings {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.gdpr-icon {
+    width: 16px;
+    height: 16px;
+    stroke: #333;
+}
+
+.gdpr-button {
+    padding: 8px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+/* Модальное окно */
+.gdpr-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gdpr-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.gdpr-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.gdpr-cookie-option {
+    margin: 15px 0;
+}
+
+.gdpr-cookie-option label {
+    font-weight: bold;
+}
+
+.gdpr-cookie-option p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.gdpr-modal-buttons {
+    text-align: right;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+
+    #gdpr-cookie-notice {
+	border: 1px solid lightgrey;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .gdpr-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gdpr-cookie-icon {
+        width: 24px;
+        height: 24px;
+        margin: 0 0 10px;
+    }
+
+    .gdpr-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .gdpr-button {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gdpr-modal-content {
+        padding: 15px;
+    }
+
+    .gdpr-modal-content h2 {
+        font-size: 18px;
+    }
+
+    .gdpr-cookie-option label {
+        font-size: 14px;
+    }
+
+    .gdpr-cookie-option p {
+        font-size: 12px;
+    }
+}
